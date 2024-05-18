@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import hotel.example.weatherview.MainActivity.weatherData;
+
 public class WeatherAdapter extends RecyclerView.Adapter {
     public WeatherAdapter(MainActivity mainActivity, MainActivity.ArrayList arrayList) {
 
@@ -30,5 +32,9 @@ public class WeatherAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return 0;
+    }
+
+    public void updateData(ArrayList<weatherData> weatherDataList) {
+
     }
 }
